@@ -5,6 +5,8 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/Activity Tracker</string>
+		<string>activity-tracker.log</string>
+		<string>activity-tracker.stderr</string>
 	</array>
 	<key>StartInterval</key>
 	<integer>1</integer>

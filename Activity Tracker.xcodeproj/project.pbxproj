@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C564C46225C578600F56F2E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C564C45225C578600F56F2E /* main.swift */; };
+		614DE17922D01D4E00AD946F /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614DE17822D01D4E00AD946F /* ConsoleIO.swift */; };
+		614DE17B22D01D9200AD946F /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614DE17A22D01D9200AD946F /* FileIO.swift */; };
 		61A5E383225C627300A2DB78 /* Activity Tracker in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C564C42225C578600F56F2E /* Activity Tracker */; };
 		61A5E385225C62CE00A2DB78 /* io.p13i.activity-tracker.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C564C4C225C5F7B00F56F2E /* io.p13i.activity-tracker.plist */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,8 @@
 		1C564C42225C578600F56F2E /* Activity Tracker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Activity Tracker"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C564C45225C578600F56F2E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1C564C4C225C5F7B00F56F2E /* io.p13i.activity-tracker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "io.p13i.activity-tracker.plist"; sourceTree = "<group>"; };
+		614DE17822D01D4E00AD946F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		614DE17A22D01D9200AD946F /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				1C564C45225C578600F56F2E /* main.swift */,
+				614DE17822D01D4E00AD946F /* ConsoleIO.swift */,
+				614DE17A22D01D9200AD946F /* FileIO.swift */,
 			);
 			path = "Activity Tracker";
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614DE17B22D01D9200AD946F /* FileIO.swift in Sources */,
 				1C564C46225C578600F56F2E /* main.swift in Sources */,
+				614DE17922D01D4E00AD946F /* ConsoleIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +289,12 @@
 		1C564C4A225C578600F56F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A2R5M625L;
+				INFOPLIST_FILE = "$(SRCROOT)/io.p13i.activity-tracker.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -290,8 +302,12 @@
 		1C564C4B225C578600F56F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A2R5M625L;
+				INFOPLIST_FILE = "$(SRCROOT)/io.p13i.activity-tracker.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
